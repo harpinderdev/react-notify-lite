@@ -1,0 +1,35 @@
+# Source files
+src/
+
+# Config files
+tsconfig.json
+rollup.config.js
+
+# Development files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+coverage/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Git
+.git/
+.gitignore
+
+# CI/CD
+.github/
+.travis.yml
+.gitlab-ci.yml
+
+# Misc
+.env
+.env.local
+.DS_Store
+Thumbs.db
+*.log
