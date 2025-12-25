@@ -2,7 +2,7 @@ import React, { createContext, useState, useCallback, ReactNode } from 'react';
 import Toast from '../components/Toast';
 import { Toast as ToastType, ToastOptions, createToast } from '../utils/createToast';
 
-interface ToastContextType {
+export interface ToastContextType {
   notify: (message: string, options?: ToastOptions) => void;
   success: (message: string, options?: Omit<ToastOptions, 'type'>) => void;
   error: (message: string, options?: Omit<ToastOptions, 'type'>) => void;
@@ -55,9 +55,9 @@ export const ToastProvider: React.FC<ToastProviderProps> = ({ children }) => {
   return (
     <ToastContext.Provider value={{ notify, success, error, warning, info }}>
       {children}
-      {Object.entries(groupedToasts).map(([position, positionToasts]) => (
+      {Object.entries(groupedToasts).map(([position, positionToasts]: [string, ToastType[]]) => (
         <div key={position} className={`toast-container toast-${position}`}>
-          {positionToasts.map((toast) => (
+          {positionToasts.map((toast: ToastType) => (
             <Toast key={toast.id} toast={toast} onRemove={removeToast} />
           ))}
         </div>
