@@ -57,10 +57,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/react-notify-lite.git"
+    "url": "https://github.com/harpinderdev/react-notify-lite.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/react-notify-lite/issues"
+    "url": "https://github.com/harpinderdev/react-notify-lite/issues"
   },
-  "homepage": "https://github.com/yourusername/react-notify-lite#readme"
+  "homepage": "https://github.com/harpinderdev/react-notify-lite#readme"
 }
