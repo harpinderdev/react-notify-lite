@@ -1,6 +1,6 @@
 {
   "name": "react-notify-lite",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A lightweight and customizable React notification library with TypeScript support. Features multiple notification types, 6 positioning options, auto-dismiss, and smooth animations.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
